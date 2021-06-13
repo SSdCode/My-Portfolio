@@ -11,69 +11,221 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <title>SD Portfolio</title>
+  <link rel="icon" href="images/carousel1.jpg" type="image/icon type">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Raleway&family=Work+Sans:wght@300&display=swap"
+    rel="stylesheet">
   <style>
     .carousel .carousel-item {
-      height: 500px;
+      /* height: 700px; */
+      height: 600px;
     }
 
     .carousel-item img {
       position: absolute;
       object-fit: cover;
-      top: 0;
-      left: 0;
-      min-height: 500px;
+      min-height: 600px;
+    }
+
+    .wordFont {
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .balooFont {
+      font-family: 'Baloo Tammudu 2', cursive;
+      font-size: x-large;
+      padding-top: 1.5%;
+    }
+
+    .ralewayFont {
+      font-family: 'Raleway', sans-serif;
+      font-size: large;
+    }
+
+    .lableFont {
+      font-family: 'Baloo Tammudu 2', cursive;
+      font-size: x-large;
     }
   </style>
 </head>
 
-<body class="bg-light">
-
+<body class="bg-dark">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Samir Dube</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand balooFont" href="index.html">Samir Dube</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto latoFont">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#socialLinks">Social Links</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        Samir Dube's Portfolio
-      </span>
+      <a class="navbar-brand ralewayFont" style="font-size: large; font-weight: 100;">Samir Dube's Portfolio</a>
     </div>
   </nav>
 
   <!-- carousel -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/carousel1.jpg" class="d-block w-100" alt="Image Not Found!">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welcome to</h5>
-          <p>Samir Dube's Portfolio</p>
+  <div class="bg-light border rounded border-secondary">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel1.jpg" class="d-block w-100" alt="Image Not Found!">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="balooFont">Welcome to</h5>
+            <p class="ralewayFont">Samir Dube's Portfolio</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!--  -->
 
-  <div class="container border rounded border-secondary d-flex justify-content-center mt-5 p-2">
-    <div class="btn-group btn-group-lg flex-wrap" role="group" aria-label="Social Links">
-      <a href="https://github.com/SSdCode" class="btn btn-secondary m-1" role="button">GitHub</a>
-      <a href="https://www.linkedin.com/in/samir-Dube-8560881b6" class="btn btn-secondary m-1" role="button">Linkedin</a>
-      <a href="https://www.youtube.com/channel/UCZ85n_47Cuh8TvTVCSGRp2Q" class="btn btn-secondary m-1"role="button">Youtube</a>
-      <a href="https://www.instagram.com/samir__________Dube/" class="btn btn-secondary m-1" role="button">Instagram</a>
+
+  <!-- About -->
+
+  <div id="about" class="container bg-light border rounded border-secondary p-5 mt-5 shadow-lg">
+    <form>
+      <div class="form-group row border rounded border-secondary bg-info m-3 shadow">
+        <h2 class="col-sm-12 balooFont"
+          style="padding-top: 3%; text-align: center; font-weight: bolder; font-size: xx-large;">About</h2>
+      </div>
+      <div class="shadow p-5">
+        <div class="form-group row m-3">
+          <h2 class="col-sm-12 balooFont" style="padding-top: 3%; font-size: x-large;">Personal Information</h2>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-5 font-weight-bold lableFont">Name</label>
+          <label class="col-sm-7 ralewayFont">Samir Satishbhai Dube</label>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-5 font-weight-bold lableFont">Birth Date</label>
+          <label class="col-sm-7 ralewayFont">22/09/2000</label>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-5 font-weight-bold lableFont">Email</label>
+          <label class="col-sm-7 ralewayFont">dubeysamir514@gmail.com</label>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-5 font-weight-bold lableFont">Contact Number</label>
+          <label class="col-sm-7 ralewayFont">7226064677</label>
+        </div>
+        <a class="btn btn-primary btn-sm p-2 bg-success shadow-lg" href="download/Samir_Resume.docx" download
+          rel="noopener noreferrer" target="_blank">
+          Download Resume
+        </a>
+      </div>
+      <hr />
+      <div class="shadow p-5">
+        <div class="form-group row m-3">
+          <h2 class="col-sm-12 balooFont" style="padding-top: 3%; font-size: x-large;">Education</h2>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-5 font-weight-bold lableFont">BCA (2017-2020)</label>
+          <label class="col-sm-7 ralewayFont">Balaji college of computer application, chhani</label>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-5 font-weight-bold lableFont">MCA - Running sem 2</label>
+          <label class="col-sm-7 ralewayFont">Sardar Vallabhbhai Patel Institute of Technology, Vasad</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Projects -->
+
+
+  <div id="projects" class="container bg-light border rounded border-secondary p-5 mt-5 shadow-lg">
+
+    <div class="form-group row border rounded border-secondary bg-info m-3 shadow">
+      <h2 class="col-sm-12 balooFont"
+        style="padding-top: 3%; text-align: center; font-weight: bolder; font-size: xx-large;">Projects</h2>
+    </div>
+
+    <div class="jumbotron shadow">
+      <h1 class="display-4 wordFont" style="font-size:450%;">Live Polls</h1>
+      <p class="lead wordFont">This is a Django website called live polls, You can create and publish your own polls and
+        share
+        link with anyone so thay can vote to your poll.</p>
+      <hr class="my-4">
+      <p>Python - Django - SqLite</p>
+      <a class="btn btn-primary btn-lg shadow-lg" href="https://github.com/SSdCode/live-polls" role="button">Learn
+        more</a>
+    </div>
+
+
+    <div class="jumbotron shadow">
+      <h1 class="display-4 wordFont">Tic Tac Toe - Themes</h1>
+      <p class="lead wordFont">This project is simple android 'tic tac toe' game in wich i have provided different
+        themes
+        which you can unlock by winning games.</p>
+      <hr class="my-4">
+      <p>Android Studio - java - SqLite</p>
+      <a class="btn btn-primary btn-lg shadow-lg"
+        href="https://play.google.com/store/apps/details?id=com.sdcode.sunchekdi" role="button">Learn more</a>
+    </div>
+
+
+    <div class="jumbotron shadow">
+      <h1 class="display-4 wordFont">Forum</h1>
+      <p class="lead wordFont">This website is made in PHP. Along with taking the YouTube PHP course "Code with Harry",
+        this site allows you to post your query and anyone can log in and answer your query</p>
+      <hr class="my-4">
+      <p>PHP - SqLite</p>
+      <a class="btn btn-primary btn-lg shadow-lg" href="https://github.com/SSdCode/forum" role="button">Learn more</a>
+    </div>
+
+
+    <div class="jumbotron shadow">
+      <h1 class="display-4 wordFont">Basic Programs (C, C++, Java, Android)</h1>
+      <p class="lead wordFont">This is an Android Application provides some Basic programs of C, C++, Java, and Android.
+        You can also run and check the output of android programs within the app.</p>
+      <hr class="my-4">
+      <p>Android Studio - Java</p>
+      <a class="btn btn-primary btn-lg shadow-lg"
+        href="https://play.google.com/store/apps/details?id=com.sdcode.basicprograms" role="button">Learn
+        more</a>
+    </div>
+
+
+    <div class="jumbotron shadow">
+      <h1 class="display-4 wordFont">Online Tiffin Service</h1>
+      <p class="lead wordFont">OTS is an android application created by our project group in BCA last sem as Android
+        project.</p>
+      <hr class="my-4">
+      <p>Android Studio - Java - Sqlite</p>
+      <a class="btn btn-primary btn-lg shadow-lg" href="https://github.com/SSdCode/OTS" role="button">Learn more</a>
+    </div>
+
+  </div>
+
+
+  <div id="socialLinks" class="container bg-light border rounded border-secondary p-5 mt-5 shadow-lg">
+    <div class="form-group row border rounded border-secondary bg-info m-3 shadow">
+      <h2 class="col-sm-12 balooFont"
+        style="padding-top: 3%; text-align: center; font-weight: bolder; font-size: xx-large;">Social Links</h2>
+    </div>
+    <div class="btn-group btn-group-lg flex-wrap shadow m-2 p-2 d-flex justify-content-center" role="group" aria-label="Social Links">
+      <a href="https://github.com/SSdCode" class="btn btn-secondary m-1 shadow" role="button">GitHub</a>
+      <a href="https://www.linkedin.com/in/samir-Dube-8560881b6" class="btn btn-secondary m-1 shadow"
+        role="button">Linkedin</a>
+      <a href="https://www.youtube.com/channel/UCZ85n_47Cuh8TvTVCSGRp2Q" class="btn btn-secondary m-1 shadow"
+        role="button">Youtube</a>
+      <a href="https://www.instagram.com/samir__________Dube/" class="btn btn-secondary m-1 shadow"
+        role="button">Instagram</a>
     </div>
   </div>
 
@@ -82,9 +234,9 @@
 
 
 
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>© 2020-2021 SdCode, Inc.</p>
+  <footer class="bg-light p-2 pt-3 m-2 border border rounded border-secondary shadow" style="font-size: larger;">
+    <p class="float-right"><a href="#" class="mr-5">Back to top</a></p>
+    <p class="ml-5">© 2020-2021 SdCode, Inc.</p>
   </footer>
 
 
