@@ -99,7 +99,7 @@
           <div style="height: 20px;"></div>
           <h5 class="ralewayFont" style="font-weight:500;">Hello, my name is</h5>
           <div style="height: 10px;"></div>
-          <p id="Myname" class="balooFont" style="font-weight: bolder; font-size: 50px;">Samir Dube</p>
+          <p id="Myname" class="balooFont" style="font-weight: bolder; font-size: 50px;"></p>
           <div style="height: 10px;"></div>
           <h5 class="wordFont" style="font-weight:500;">I am student, programmer, developer, and good learner</h5>
           <div style="height: 30px;"></div>
@@ -258,25 +258,29 @@
 
 
 
-<!--   <script>
+<script>
     var i = 0;
     var txt = 'Samir Dube';
-    var speed = 75;
+    var speed = 200;
 
+    function typeAgain(){
+        i=0;
+        document.getElementById("Myname").innerHTML = ""; 
+        typeWriter();
+    }
     function typeWriter() {
       if (i < txt.length) {
         document.getElementById("Myname").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
       }else{
-        i=0;
-        document.getElementById("Myname").innerHTML = ""; 
+        setTimeout(typeAgain, 1000);
       }
     }
     window.onload = function() {
       typeWriter();
     };
-</script> -->
+</script>
   
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
