@@ -263,19 +263,20 @@
     var txt = 'Samir Dube';
     var speed = 200;
 
-    function typeAgain(){
-        i=0;
-        document.getElementById("Myname").innerHTML = ""; 
-        typeWriter();
-    }
+//     function typeAgain(){
+//         i=0;
+//         document.getElementById("Myname").innerHTML = ""; 
+//         typeWriter();
+//     }
     function typeWriter() {
       if (i < txt.length) {
         document.getElementById("Myname").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
-      }else{
-        setTimeout(typeAgain, 1000);
       }
+//       else{
+//         setTimeout(typeAgain, 1000);
+//       }
     }
     window.onload = function() {
       typeWriter();
