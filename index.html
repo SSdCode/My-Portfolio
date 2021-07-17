@@ -12,7 +12,7 @@
   gtag('config', 'G-Q4RX2FT97B');
 </script>
   
-  <!-- Required meta tags -->
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -90,7 +90,7 @@
 
 
 
-  <!-- carousel -->
+  
   <div class="container bg-light border rounded border-secondary shadow-lg mt-5">
     <div class="form-group row">
       <div class="col-sm-7">
@@ -99,7 +99,7 @@
           <div style="height: 20px;"></div>
           <h5 class="ralewayFont" style="font-weight:500;">Hello, my name is</h5>
           <div style="height: 10px;"></div>
-          <p class="balooFont" style="font-weight: bolder; font-size: 50px;">Samir Dube</p>
+          <p id="Myname" class="balooFont" style="font-weight: bolder; font-size: 50px;"></p>
           <div style="height: 10px;"></div>
           <h5 class="wordFont" style="font-weight:500;">I am student, programmer, developer, and good learner</h5>
           <div style="height: 30px;"></div>
@@ -258,7 +258,26 @@
 
 
 
-  <!-- Optional JavaScript -->
+  <script>
+    var i = 0;
+    var txt = 'Samir Dube';
+    var speed = 25;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("Myname").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }else{
+        i=0;
+        document.getElementById("Myname").innerHTML = ""; 
+      }
+    }
+    window.onload = function() {
+      typeWriter();
+    };
+</script>
+  
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
